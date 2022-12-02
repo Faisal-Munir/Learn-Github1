@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heading Paragrphs & Emmet</title>
+</head>
+
+<body>
+  <h1>Harry</h1>
+  <h2>Harry</h2>
+  <h3>Harry</h3>
+  <h4>Harry</h4>
+  <h5>Harry</h5>
+  <h6>Harry</h6>
+
+  <p>This is Harry</p>
+
+  <!-- lorem4  to get four words lorem ipsum-->
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium odit explicabo doloremque sapiente incidunt
+    sequi tempora repudiandae. Inventore amet, accusantium, omnis harum commodi aliquam, mollitia delectus magnam
+    doloremque incidunt vitae aperiam exercitationem nihil. Ex sequi velit quo incidunt nihil. Quasi.</p>
+
+  <!-- 4 Paragraph    p*4 -->
+  <p>first</p>
+  <p>second</p>
+  <p>third</p>
+  <p>fourth</p>
+
+  <!-- 'p' is a only Tag need to be closed-->
+  <!-- There are TAGS & ATTRIBUTES in HTML -->
+
+  <!-- <STRONG> tag => for bold
+         <EM>This is Emphasized-->
+
+  <!-- Lorem<number of words>  Lorem4 for four words -->
+
+  <p>Lorem ipsum dolor sit <strong>consectetur adipisicing</strong> consectetur adipisicing elit. Accusantium odit
+    explicabo doloremque sapiente incidunt sequi tempora repudiandae. Inventore amet, accusantium, omnis harum commodi
+    <em>aliquam, mollitia delectus</em>aliquam, mollitia delectus magnam doloremque incidunt vitae aperiam
+    exercitationem nihil. Ex sequi velit quo incidunt nihil. Quasi.
+  </p>
+
+  <!-- <br> => line break, self closing tag  but this is not a good practise <br> as CSS is better-->
+  <p>This is line break <br> This is a new line</p>
+
+
+  <!-- <hr> => horizontal rule(line) -> self closing tag-->
+  <p>This is line break This is a new line</p>
+  <hr>
+
+  <!-- <b> =>bold tag    <i> Italic Tag    but after HTML5 its is not recommende to use bold,ittalic but recommended is STRONG insted of BOLD, Emphasised<em> instead of Itallic -->
+  <p> Lorem ipsum dolor sit.<b>Accusantium</b> odit explicabo <i>doloremque</i> sapiente incidunt sequi tempora
+    repudiandae. Inventore amet, accusantium</p>
+
+  <!-- CNTL + Enter => Jump into new line -->
+  <!-- Anchor <a> Tag for External links & Internal Links-->
+  <!-- TAG VS ATTRIBUTE -->
+  <!-- ALT  + Click "cursor come there" -->
+  <!-- target="_blank"  => Attribute open link in new tab-->
+  <a href="https://www.google.com" target="_blank"> Go To Google</a><br>
+  <a href="https://www.facebook.com" target="_blank"> Go To FaceBook</a><br>
+  <a href="https://www.linkedin.com" target="_blank"> Go To Linkedin</a><br>
+  <a href="/internalLinkfile.html" target="_blank">Internal Link File</a>
+
+  <!-- <img> tag for Image insertion  -> here image is not present so <alt> text is shown -->
+  <!-- we can set width and height with 'width' and 'height' attributes but this is not recommended but these can be recommended using CSS.  NOTE: HTML for skeleton and CSSfor designing -->
+  <img src="" alt="Error Loading Image"><br>
+  <img
+    src="https://images.unsplash.com/photo-1555412654-72a95a495858?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    alt="Remote Image" width="233" height="15">
+
+  <!-- List  -->
+
+  <!-- UNOrdered List <ul> -->
+  <ul type="square">
+    <li>This is first item of my unoudered list</li>
+    <li>This is second item of my unoudered list</li>
+
+    <ul>
+      <li>This is SecondOne </li>
+      <li>This is SecondTwo </li>
+      <li>This is SecondThird </li>
+    </ul>
+
+    <li>This is third item of my unoudered list</li>
+
+  </ul>
+  <!-- Ordered List <ol> -->
+  <ol type="i">
+    <li>This is first item of my unoudered list</li>
+    <li>This is second item of my unoudered list</li>
+    <li>This is third item of my unoudered list</li>
+
+  </ol>
+
+  <!-- Tables  <table>-->
+  <!-- thead <th>   tbody<tb>  tr<trow> <th>->table head data <td>->date -->
+  <h3>HTML Tables</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Chapter</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Faisal</td>
+        <td>10B</td>
+        <td>2nd chapter</td>
+      </tr>
+      <tr>
+        <td>Zain</td>
+        <td>9B</td>
+        <td>4th chapter</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--  -->
+  <!-- Forms  <form>  action->attribute where data of the form will be submitted -->
+  <!-- although we can use <br> to bring two form elements in next line but it is is not recommended, <div> tag is BLOCK element i.e different lines, <input> <span> are inline elements -->
+  <form action="backend.php">
+    <br>
+    <label for="myname" id="">Name</label> <!-- Label Belongs to "id" attribute  -->
+    <div> <input type="text" name="myname" id="myname">
+    </div>
+
+    <div>Name2 <input type="text" name="myname" id="myname">
+    </div>
+
+    <div> Role <input type="text" name="myrole">
+    </div>
+
+    <div> Email <input type="email" name="myemail">
+      <!-- name="" -> is a attribute by which your backend will know that this is EMAIL  -->
+    </div>
+
+    <div>
+      Date<input type="date" name="mydate">
+    </div>
+
+    <div>
+      My Bonus<input type="number" name="mynumber">
+    </div>
+
+    <div>
+      Are you eligible? :<input type="checkbox" name="myeligibility">
+    </div>
+
+    <div>
+      Are you eligible? :<input type="checkbox" name="myeligibility1" checked>
+      <!-- checked means "check box" is already checked by default -->
+    </div>
+
+    <div>
+      Gender: Male<input type="radio" name="mygender"> Female<input type="radio" name="mygender">
+    </div>
+
+    <div>
+      <input type="submit" value="Submit Now"> <!-- Submit Button having "Submit Now"  -->
+      <input type="reset" value="Reset Now">
+    </div>
+
+    <div>
+      Write About Yourself: <br> <textarea name="mytext" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+      <label for="car"> Car </label>
+      <select name="mycar" id="car">
+        <option value="Indica" selected> Indica </option>
+        <option value="FZR2000"> Fzr2000 </option>
+        <option value="Toyota"> Toyota </option>
+      </select>
+
+    </div>
+
+  </form>
+
+  <!-- Inline vs Block Elements -->
+  <!-- <p> is block element whereas <span> anchor<a>,  is a Inline element -->
+  <p>This is Paragraph</p>
+  <p>This is also a paragraph</p>
+  <span>This is Paragraph</span> <span>This is also a paragraph</span>
+
+
+  <!-- IDs and Classes -->
+  <!-- IDs refer to Identifier as we give name to someone to identify uniquely, ONE ID goes to one element only, from JS you can identify that element via its ID and modify it , VIA CSS you can design this element -->
+
+  <!-- Class: if we have 100 of elements and i want to change background of them, we can assign more than more class for the element like below has redbg and blackbg, one class can be assign to moe than one element -->
+  <div id="main box" class="redbg blackbg"> This is a main box </div>
+  <span class="redbg"></span>
+
+  <!-- Emmet -->
+  <!-- . -> for class,  # -> for ID -->
+  <!-- span.   , span#  -->
+  <!-- Emmet takes <div> element as default -->
+  <!-- only .blackclass gives <div>class="blackclass"</div> -->
+  <!-- Taking multiple elements using Emmet -->
+  <!-- span.myclass.myclass2.myclass3 + <Tab> -->
+  <span class="myclass myclass2 myclass3"></span>
+
+  <!-- span.myclass.myclass2.myclass3*4 -> create 4 span elements like below-->
+  <span class="myclass myclass2 myclass3"></span>
+  <span class="myclass myclass2 myclass3"></span>
+  <span class="myclass myclass2 myclass3"></span>
+  <span class="myclass myclass2 myclass3"></span>
+
+
+  <!-- HTML Entities  are use to show reserved symbols and special symbols on our keyboard like pound symbol -->
+  <div class="container">
+    <p>This is a para</p>
+  </div>
+  <div class="container">
+    <p>This is another para</p>
+    <p>This is another para with SPACES CHOPPEDOFF</p> <!-- HTML by default CHPOFF your all spaces -->
+  </div>
+  <!-- to use spaces you can use HTML entities &nbsp;  -> non breaking space  -> NON RECOMMENDED FOR ADDING SPACES but CSS is use to do it all (https://www.w3schools.com/charsets/ref_html_symbols.asp)-->
+  <div>
+    <p>This is para with &nbsp; &nbsp; &nbsp; &nbsp; 4 spaces</p>
+    <p>para graph is written like this
+    <p></p> <!-- Here <p> is not shown, to show this -->
+    <p>para graph is written like this &lt;p&gt;</p>
+    <p>Pound symbol is written like this &pound;</p>
+    <p>copyright is written like this &copy;</p>
+    <p>empty character is written like this &#8203;</p>
+    <p>empty character is written like this &#10240;</p>
+    <p>=> character is written like this &rArr;</p>
+    <p>fraction is written like this &frac14;</p>
+  </div>
+
+  <!-- Semantic Tags in HTML -->
+  <!-- Semantic mean giving Meaning to a word.  These help in SEO Ranking -->
+
+
+</body>
+
+</html>
